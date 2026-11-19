@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact - ALDAAS Baraa</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Mes projets</a></li>
+          <li><a href="experience.html">Mon expérience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contactez-moi</h1>
+      <p>Une question ou une proposition ? Remplissez le formulaire ci-dessous.</p>
+
+      <section id="contact">
+        <h2>Me contacter</h2>
+        <form action="contact.html" method="post">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <p><strong>Vous me contactez pour :</strong></p>
+          <div class="checkbox-group">
+            <input type="checkbox" id="formation" name="motif[]" value="formation" />
+            <label for="formation">Formation</label>
+
+            <input type="checkbox" id="rh" name="motif[]" value="RH" />
+            <label for="rh">RH</label>
+
+            <input type="checkbox" id="dev" name="motif[]" value="dev" />
+            <label for="dev">Développement</label>
+          </div>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ALDAAS Baraa - Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
